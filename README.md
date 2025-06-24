@@ -8,9 +8,9 @@ The quadplane comes with another advantage, its lack of mechanical movement or v
 <br><br>
 
 
-Coming back to the technical side of the project, we will first look at the electronic components required
+Coming back to the technical side of the project, we will first look at the electronic components and materials required
 <br>
-<ol type=A>
+
 <head>Electronics</head>
 <ol>
   <li> SG90 Servo Motors </li>
@@ -20,9 +20,49 @@ Coming back to the technical side of the project, we will first look at the elec
     <li>1 for rudder</li>
   </ul>
   
-  <li>Teensy4.0 MCU</li>
+  <li>Teensy4.0 MCU*1</li>
 
-  <li>MPU6050 IMU</li>
+  <li>MPU6050 IMU 6dof*1</li>
+
+  <li>RC Receiver</li>
+
+  <li>LiPo Battery*1</li>
+  
+  <li>A2212 BLDC Motors</li>
+  <ul>
+    <li>4*2300kv for quad</li>
+    <li>1*1400kv for plane</li>
+  </ul>
+
+  <li>SimonK 30A Brushless ESCs*6</li>
+
+  <li>PDB and wire harness</li>
+
+  <li>Small Perfboard or prototyping board and jumpers</li>
 </ol>
+
+<head>Hardware </head>
+<ol>
+  <li>Propellors</li>
+  <ul>
+    <li>6045 prop*2</li>
+    <li>8045 prop*2</li>
+    <li>5045 prop*1</li>
+  </ul>
+
+  <li>2mm Ply</li>
+
+  <li>Thermocol</li>
+
+  <li>D type aluminum extrusions</li>
+
+  <li>Sandpaper and hotwire cutter</li>
+
+  <li>Push rods</li>
+
+  <li>Nuts and Bolts</li>
 </ol>
+
+
+
 The source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
