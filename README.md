@@ -13,5 +13,14 @@ Coming back to the technical side of the project, we will first look at the elec
 <head>Electronics</head>
 <ol>
   <li> SG90 Servo Motors </li>
+  <ul>
+    <li>2 for ailerons</li>
+    <li>1 for elevator</li>
+    <li>1 for rudder</li>
+  </ul>
+  
+  <li>Teensy4.0 MCU</li>
+
+  <li>MPU6050 IMU</li>
 </ol>
 The original source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
