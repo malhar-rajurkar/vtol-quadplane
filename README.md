@@ -1,4 +1,9 @@
 # vtol-quadplane
+
+![WhatsApp Image 2025-06-24 at 19 22 57_c7b98f99 (1)](https://github.com/user-attachments/assets/16a6a688-7d13-4f22-ba16-c0ad7b89e303)
+
+
+<br><br>
 A vtol quadplane based on Teensy4.0 flight controller with dRehmFlight code with certain modifications for including smooth transitions, control mixing and usage of PWM type ESCs. 
 <br> <br>
 
@@ -63,6 +68,32 @@ Coming back to the technical side of the project, we will first look at the elec
   <li>Nuts and Bolts</li>
 </ol>
 
+## The Flight Controller
+The flight controller is the brain of the entire thing. It reads the rc inputs from receiver, acquires current linear and angular acceleration in x,y,z axes from the IMU, then runs the PID controller action and then commands the ESCs with the required motor speeds. Let us now look at how to build it.
+
+<head>Hardware</head>
+We will be using a perfboard as our base. Attach the teensy4.0 to the perfboard using female headers so that it is removable. Solder male headers in line with the exposed gpio pins and also solder another 2 columns of headers along with them. They will act as our buses and will receive power from the inbuilt 5v BEC in our ESCs and then distribute the power to the servos as well as the teensy and mpu. <br>
+Now connect the 5v rail to the 5v pin and the ground rail to the GND pin on the teensy4.0. IMP - Teensy operates on 3.3v logic, applying 5v to any pin other than the designated 5v pin will fry it.
+<br>
 
 
-The source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
+![WhatsApp Image 2024-12-05 at 01 11 57_970144d2 (2)](https://github.com/user-attachments/assets/0f54631e-2ae4-4975-8fe4-5c40c9a2242e)
+<br>
+Also check the jumper between the USB power and our rails is not connected as shown in the diagram. No need to add diodes(it is for reverse polarity protection) <br><br>
+![teensy-3-6-back-vin-to-vusb-jumper (1)](https://github.com/user-attachments/assets/cbec6f0e-2ea7-403c-a367-a2228cf54f90)
+
+
+<br><br>
+Now attach via some jumpers the MPU6050 Vcc and GND to our rails and the SDA,SCL to pin 18 and 19 respectively. Also attach the receiver channels to the exposed gpio pins and connect our rails to the receiver rails for powering it
+<br><br>
+
+![WhatsApp Image 2024-12-05 at 00 42 10_bfb31de6 (1)](https://github.com/user-attachments/assets/a030e697-306b-4526-9570-0a17789808c0)
+
+<br><br>
+The flight controller build is now done.
+A more detailed version is available on https://github.com/nickrehm/dRehmFlight
+
+<head>Flight Controller Code Modifications</head>
+
+
+
