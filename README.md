@@ -1,3 +1,17 @@
 # vtol-quadplane
-A vtol quadplane based on dRehmFlight code with certain modifications including smooth transitions and using PWM ESCs. <br> <br>
-The original source code can be found on https://github.com/nickrehm/dRehmFlight
+A vtol quadplane based on Teensy4.0 flight controller with dRehmFlight code with certain modifications for including smooth transitions, control mixing and usage of PWM type ESCs. 
+<br> <br>
+
+This project aimed at building a vtol (vertical takeoff and landing) quadplane testbed(4 fixed thrust motors for the quadcopter configuration and 1 forward thrust motor for the plane configuration). The quadplane is essentially a mashup between a quadcopter and a fixed wing aircraft, thus giving the quadplane vertical takeoff and landing as well as hovering capabilities like a quadcopter while also retaining the efficiency and endurance of a fixed-wing aircraft during longer flights.
+<br>
+The quadplane comes with another advantage, its lack of mechanical movement or vectoring on thrust providing motors - hence making it easier to design, build and also minimize points of failure. Other vtol designs often contain vectoring of the thrust motors giving them better efficiency than the quadplane but the reliability might become reduced because of the extra moving parts and that is one of the reasons majority of the commercial vtol uavs are in a quadplane configuration.
+<br><br>
+
+
+Coming back to the technical side of the project, we will first look at the electronic components required
+<br>
+<head>Electronics</head>
+<ol>
+  <li> SG90 Servo Motors </li>
+</ol>
+The original source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
