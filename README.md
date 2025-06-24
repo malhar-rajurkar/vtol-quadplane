@@ -10,6 +10,7 @@ The quadplane comes with another advantage, its lack of mechanical movement or v
 
 Coming back to the technical side of the project, we will first look at the electronic components required
 <br>
+<ol type=A>
 <head>Electronics</head>
 <ol>
   <li> SG90 Servo Motors </li>
@@ -23,4 +24,5 @@ Coming back to the technical side of the project, we will first look at the elec
 
   <li>MPU6050 IMU</li>
 </ol>
-The original source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
+</ol>
+The source code and relevant documentation can be found on https://github.com/nickrehm/dRehmFlight
